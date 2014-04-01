@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @truck.title %>
+</p>
+
+<p>
+  <strong>Food truck name:</strong>
+  <%= @truck.food_truck_name %>
+</p>
+
+<p>
+  <strong>Food truck url:</strong>
+  <%= @truck.food_truck_url %>
+</p>
+
+<p>
+  <strong>Type of food:</strong>
+  <%= @truck.type_of_food %>
+</p>
+
+<%= link_to 'Edit', edit_truck_path(@truck) %> |
+<%= link_to 'Back', trucks_path %>

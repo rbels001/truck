@@ -1,0 +1,33 @@
+<h1>Listing trucks</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Food truck name</th>
+      <th>Food truck url</th>
+      <th>Type of food</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @trucks.each do |truck| %>
+      <tr>
+        <td><%= truck.title %></td>
+        <td><%= truck.food_truck_name %></td>
+        <td><%= truck.food_truck_url %></td>
+        <td><%= truck.type_of_food %></td>
+        <td><%= link_to 'Show', truck %></td>
+        <td><%= link_to 'Edit', edit_truck_path(truck) %></td>
+        <td><%= link_to 'Destroy', truck, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Truck', new_truck_path %>

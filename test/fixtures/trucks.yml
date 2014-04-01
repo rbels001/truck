@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  food_truck_name: MyString
+  food_truck_url: MyText
+  type_of_food: MyString
+
+two:
+  title: MyString
+  food_truck_name: MyString
+  food_truck_url: MyText
+  type_of_food: MyString
