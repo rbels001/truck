@@ -1,6 +1,9 @@
 TruckFoodApp::Application.routes.draw do
   resources :trucks
 
+match '/home' => 'pages_controller#home', :via => [:get]
+match '/about' => 'pages_controller#about',  :via => [:get]
+match '/contact'=> 'pages_controller#contact',:via => [:get]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
