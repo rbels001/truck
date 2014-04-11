@@ -1,6 +1,14 @@
 // Place all the styles related to the pages_controller controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+html{
+	font-size:58%;
+	font-family:sans-serif;
+}
+
+html body{
+	height: 100%;
+}
 
 header{
 	position: fixed;
@@ -8,7 +16,8 @@ header{
 	top:0px;
 	width: 100%;
 	z-index:1;
-	background-color:#ffffff; 
+	background-color:#ffffff;
+
 }
 
 header nav li{
@@ -17,10 +26,20 @@ header nav li{
 
 }
 
+div.content{
+	text-align: center;
+	background-repeat: repeat;
+	background-attachment: scroll;
+	background-position: 0% 0%;
+	background-clip: border-box;
+	background-origin: padding-box;
+	background-size: auto auto;
+}
+ 
 header h1{
 	text-transform:uppercase;
 	letter-spacing:1px;
-	font-size:1.2rem;
+	font-size:1.8rem;
 	font-family:rockwell;
 	font-weight: 200;
 }
@@ -31,6 +50,8 @@ h1{
 	margin-right:0%;
 	margin-left: 0%;
 	width:39%;
+	padding-bottom: 1%;
+	padding-top: 1%;
 }
 
 nav{
@@ -39,8 +60,8 @@ nav{
 
 section#cover{
 	display:block;
-	padding-top:35%;
-	height:10rem;
+	padding-top:60%;
+	height:95rem;
 	background-size: cover;
 	background-position: center center;
 }
@@ -50,21 +71,103 @@ nav#menu{
 	font-size: 1.0rem;
 	opacity: 0.4;
 	font-weight: 800;
+	padding-top: 1%;
 
 }
 
-section#trucks
+section#Trucks
 {
-	background-color: #fffff0;
+	display:block;
+	background-color: #ffffff;
 	text-transform: uppercase;
+}
+
+section#Trucks ul.grid{
+	list-style-type:none;
+	list-style-image: none;
+	list-style-position: outside;
+}
+
+*{
+	margin:0px;
+	padding:0px;
+	-moz-box-sizing:border-box;
+}
+section#Trucks ul.grid li{
+
+	margin-bottom: 3%;
+	float: left;
+	margin-right: -100%;
+	max-width:10%;
+	max-height:10%;
+	position:relative;
+	-moz-box-sizing: border-box;
+}
+
+section > .wrapper{
+	padding-top: 12rem;
+	padding-right-value: 0px;
+	padding-bottom: 12rem;
+	padding-left-value:0px; 
+	padding-left-ltr-source: physical;
+	padding-left-rtl-source: physical;
+	padding-right-ltr-source: physical;
+	padding-right-rtl-source: physical;
+	border-width: 1px;
+	border-bottom-style:solid;
+	border-bottom-color: #eee;
+}
+
+.wrapper{
+	width:128rem;
+	max-width: 90%;
+	position:relative;
+	margin-top: 0px;
+	margin-right-value: auto;
+	margin-bottom: 0px;
+	margin-left-value: auto;
+	}
+
+div.wrapper{
+	padding-top: 10rem;
+	padding-right-value: 0px;
+	padding-bottom: 12rem;
+	padding-left-value: 0px;
 }
 
 h2
 {
 	text-transform: uppercase;
-	font-size: 1.0rem;
+	font-size: 1.8rem;
 	opacity: 0.4;
 	font-weight: 900;
 	font-family: rockwell;
 	text-align: center;
+	padding-top: 1%;
+	padding-bottom:5%;
+
+	}
+
+h3{
+	text-transform: none;
+	font-size: 2rem;
+	opacity: 1;
+	font-weight: 900;
+	font-family: rockwell;
+	text-align: center;
+	padding-bottom: 3%
+
+
+}
+
+
+a{
+	text-decoration:none;
+	font-weight:600;
+}
+
+div.divider img{
+	width:20%;
+	height:20%;
+	text-align: center;	
 }

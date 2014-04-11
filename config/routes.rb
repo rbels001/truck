@@ -1,4 +1,5 @@
 TruckFoodApp::Application.routes.draw do
+  get "new_users/new"
   resources :trucks
 
 match '/home' => 'pages_controller#home', :via => [:get]
